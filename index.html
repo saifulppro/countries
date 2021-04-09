@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Temperature Hot</title>
+    <title>All Country Information</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,7 +15,18 @@
             font-family: 'Oswald', sans-serif;
             background: url(images/bg-image.jpg) no-repeat;
             background-size: cover;
-            height: 100vh;
+            height: auto;
+            color: #fff;
+        }
+        .header {
+            padding: 20px;
+            background: rgba(0,0,0,0.5);
+        }
+        .logo {
+            text-align: center;
+            font-size: 30px;
+        }
+        .logo a {
             color: #fff;
         }
         .country_info {
@@ -24,14 +35,33 @@
             margin: 0;
         }
         .c_img img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
+            margin-bottom: 30px;
+        }
+        .table-dark {
+            color: #fff;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .c_img p {
+            text-align: center;
             margin-bottom: 30px;
         }
     </style>
 </head>
 
 <body>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="logo">
+                        <a href="#">World Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <form class="col-md-6 m-auto py-5">
             <div class="input-group mb-3">
@@ -45,29 +75,90 @@
     <div class="countryList">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-xl-6">
+                <div class="col-xl-8">
                     <div class="country_info">
                         <div class="c_img">
                           <img id="img" src="" alt="">  
+                          <p>Country Flag</p>
                         </div>
-                        
-                        <div id="c_name"></div>
-                        <div id="c_nativename"></div>
-                        <div id="c_city"></div>
-                        <div id="c_currency"></div>
-                        <div id="c_code"></div>
-                        <div id="c_language"></div>
-                        <div id="c_region"></div>
-                        <div id="c_subregion"></div>
-                        <div id="c_pop"></div>
-                        <div id="c_area"></div>
-                        <div id="c_timezone"></div>
-                        <div id="c_border"></div>
+                        <h3 class='m-3'>Country Information :-</h3>
+                        <div class="content_table">
+                            <table class="table table-hover table-dark">
+                                <tbody>
+                                <tr>
+                                    <td>Country Name</td>
+                                    <td><span id="c_name"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Native Name</td>
+                                    <td><span id="c_nativename"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Capital</td>
+                                    <td><span id="c_city"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Currency Name</td>
+                                    <td><span id="c_currency"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Country Code</td>
+                                    <td><span id="c_code"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Country Language</td>
+                                    <td><span id="c_language"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Country Region</td>
+                                    <td><span id="c_region"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Sub Region</td>
+                                    <td><span id="c_subregion"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Total Population</td>
+                                    <td><span id="c_pop"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Total Area</td>
+                                    <td><span id="c_area"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Time Zone</td>
+                                    <td><span id="c_timezone"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Border Country</td>
+                                    <td><span id="c_border"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Member Details</td>
+                                    <td><span id="c_regionalBlock"></span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- <div class="content"><tr><td>Country Name:</td><td><span id="c_name"></span></td></tr></div> -->
+                        <!-- <div class="content">Native Name: <span id="c_nativename"></span></div>
+                        <div class="content"><span id="c_city"></span></div>
+                        <div class="content"><span id="c_currency"></span></div>
+                        <div class="content"><span id="c_code"></span></div>
+                        <div class="content"><span id="c_language"></span></div>
+                        <div class="content"><span id="c_region"></span></div>
+                        <div class="content"><span id="c_subregion"></span></div>
+                        <div class="content"><span id="c_pop"></span></div>
+                        <div class="content"><span id="c_area"></span></div>
+                        <div class="content"><span id="c_timezone"></span></div>
+                        <div class="content"><span id="c_border"></span></div>
+                        <div class="content"><span id="c_regionalBlock"></span></div> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
     <!-- main js -->
     <script src="main.js"></script>
 </body>
