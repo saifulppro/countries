@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- fontst -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+            color: #fff;
+        }
+        .country_info {
+            background-color: rgba(0,0,0,0.3);
+            padding: 15px;
+            margin: 0;
+        }
+        .c_img img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input type="text" id="Country" class="form-control" placeholder="Search A country">
+                <div class="input-group-append">
+                    <button type="button" id="submit" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="countryList">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-6">
+                    <div class="country_info">
+                        <div class="c_img">
+                          <img id="img" src="" alt="">  
+                        </div>
+                        
+                        <div id="c_name"></div>
+                        <div id="c_nativename"></div>
+                        <div id="c_city"></div>
+                        <div id="c_currency"></div>
+                        <div id="c_code"></div>
+                        <div id="c_language"></div>
+                        <div id="c_region"></div>
+                        <div id="c_subregion"></div>
+                        <div id="c_pop"></div>
+                        <div id="c_area"></div>
+                        <div id="c_timezone"></div>
+                        <div id="c_border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main js -->
+    <script src="main.js"></script>
+</body>
+
+</html>
